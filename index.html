@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Flex Grid JS Training</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="" class="form form--add">
+            <h1 class="form__title">Dodaj element do DOM</h1>
+            <input type="text" class="form__input" name='node' placeholder="element html" required>
+            <input type="text" class="form__input" name='txt' placeholder="tekst w elemencie">
+            <input type="text" class="form__input" name='attr' placeholder="atrybut">
+            <input type="text" class="form__input" name='value' placeholder="wartość atrybutu">
+            <button class="form__btn">Dodaj element</button>
+
+        </form>
+        <form action="" class="form form--search">
+            <h1 class="form__title">Przeszukaj DOM</h1>
+            <input type="text" class="form__input" name='searching-element' placeholder="wyszukiwany element html"
+                required>
+            <input type="submit" class="form__btn" value="Znajdź">
+
+        </form>
+    </div>
+    <div class="result"></div>
+    <div class="content"></div>
+
+    <footer class="footer">
+        <p>Stopka</p>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

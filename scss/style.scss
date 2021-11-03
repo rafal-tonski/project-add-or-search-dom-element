@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+body{
+    position: relative;
+    min-height: calc(100vh - 30px);
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 35vh;
+    margin-top: 30px;
+    background-color: whitesmoke;
+
+}
+
+.form--add {
+    flex-basis: 40%;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 3px 4px 10px 0px rgba(66, 68, 90, 1);
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    @media (max-width: 1023px) {
+        flex-basis: 60%;
+    } 
+
+
+}
+
+.form--search {
+    flex-basis: 40%;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 3px 4px 10px 0px;
+    padding: 20px 10px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+
+    @media (max-width: 1023px) {
+        flex-basis: 60%;
+    } 
+
+}
+
+.form__title {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.form__input {
+    flex-basis: 40%;
+    margin: 10px;
+    height: 30px;
+    padding-left: 10px;
+    
+    @media (max-width: 734px) {
+        flex-basis: 60%;
+    } 
+
+    .form--search & {
+        flex-basis: 60%;
+    }
+
+  
+
+
+
+}
+
+.form__btn {
+    flex-basis: 60%;
+    margin: 10px;
+    background-color: whitesmoke;
+    border: solid 2px black;
+    border-radius: 0;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        background-color: black;
+        color: white;
+
+    }
+
+}
+
+.result {
+    background-color: whitesmoke;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @media (max-width: 1023px) {
+        grid-template-columns: repeat(2, 1fr)
+    } 
+    @media (max-width: 599px) {
+        grid-template-columns: repeat(1, 1fr)
+    } 
+
+
+}
+
+.result__number-info {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.result__element-description {
+    padding: 10px;
+    border: solid 1px green
+}
+
+.content {
+    background-color: whitesmoke;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.footer {
+    position: absolute;
+    bottom: -10vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    max-width: 1200px;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
